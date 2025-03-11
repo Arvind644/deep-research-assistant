@@ -1,19 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useState } from 'react';
-import { MemoryClient } from 'mem0ai';
 import ReactMarkdown from 'react-markdown';
-
-interface Memory {
-  id: string;
-  content: string;
-  score?: number;
-}
-
-interface Message {
-  role: 'system' | 'user' | 'assistant';
-  content: string;
-}
 
 export function ResearchInterface() {
   const [query, setQuery] = useState('');
@@ -120,4 +109,4 @@ export function ResearchInterface() {
       </div>
     </div>
   );
-} 
+}

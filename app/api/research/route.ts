@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { MemoryClient } from 'mem0ai';
@@ -69,4 +71,4 @@ export async function POST(req: Request) {
       { status: 500 }
     );
   }
-} 
+}
