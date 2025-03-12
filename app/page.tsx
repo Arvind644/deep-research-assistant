@@ -1,5 +1,5 @@
 import { ResearchInterface } from '../components/ResearchInterface';
-
+import Footer from '../components/Footer';
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#fdf6e3] to-[#eee8d5] p-6">
@@ -22,6 +22,7 @@ export default function Home() {
         </div>
         <ResearchInterface />
       </div>
+      <Footer />
     </main>
   );
 }
